@@ -74,7 +74,7 @@ my %valid_types = (
 	'channel'	=> [ qw/ tweet search dm reply sender error * / ],	# twirssi_set_channel
 );
 
-my $local_tz = DateTime::TimeZone->new( name => 'local' );
+my $local_tz = DateTime::TimeZone->new( name => 'UTC' );
 
 my @settings_defn = (
         [ 'broadcast_users',   'twirssi_broadcast_users',   's', undef,			'list{,}' ],
